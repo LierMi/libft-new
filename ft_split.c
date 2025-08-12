@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: liemi <liemi@student.42.fr>                +#+  +:+       +#+        */
+/*   By: liemi <liemi@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 20:55:59 by liemi             #+#    #+#             */
-/*   Updated: 2025/08/12 16:02:46 by liemi            ###   ########.fr       */
+/*   Updated: 2025/08/12 18:19:06 by liemi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,7 @@ char	**ft_split(char const *s, char c)
 	result = malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!result)
 		return (NULL);
+	i = 0;
 	while (*s)
 	{
 		status = get_next(&s, c, &w);
