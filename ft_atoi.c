@@ -6,7 +6,7 @@
 /*   By: liemi <liemi@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/07 17:44:42 by liemi             #+#    #+#             */
-/*   Updated: 2025/07/14 18:40:41 by liemi            ###   ########.fr       */
+/*   Updated: 2025/08/13 22:50:50 by liemi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_atoi(const char *str)
 		str++;
 	}
 	while (*str >= '0' && *str <= '9')
-	{	
+	{
 		result = result * 10 + (*str - '0');
 		str++;
 	}
